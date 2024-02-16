@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/stg05/CLionProjects/asymptotic-test/main.cpp" "C:/Users/stg05/CLionProjects/asymptotic-test/cmake-build-debug/CMakeFiles/asymptotic_test.dir/main.cpp.obj"
+  "C:/Users/stg05/CLionProjects/asymptotic-test/bisearch.cpp" "C:/Users/stg05/CLionProjects/asymptotic-test/cmake-build-debug/CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj"
+  "C:/Users/stg05/CLionProjects/asymptotic-test/bruteforce.cpp" "C:/Users/stg05/CLionProjects/asymptotic-test/cmake-build-debug/CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

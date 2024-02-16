@@ -128,29 +128,53 @@ asymptotic_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/build
 .PHONY : asymptotic_test/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+bisearch.obj: bisearch.cpp.obj
+.PHONY : bisearch.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+bisearch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj
+.PHONY : bisearch.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+bisearch.i: bisearch.cpp.i
+.PHONY : bisearch.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/main.cpp.i
-.PHONY : main.cpp.i
+bisearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch.cpp.i
+.PHONY : bisearch.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+bisearch.s: bisearch.cpp.s
+.PHONY : bisearch.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/main.cpp.s
-.PHONY : main.cpp.s
+bisearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch.cpp.s
+.PHONY : bisearch.cpp.s
+
+bruteforce.obj: bruteforce.cpp.obj
+.PHONY : bruteforce.obj
+
+# target to build an object file
+bruteforce.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj
+.PHONY : bruteforce.cpp.obj
+
+bruteforce.i: bruteforce.cpp.i
+.PHONY : bruteforce.i
+
+# target to preprocess a source file
+bruteforce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bruteforce.cpp.i
+.PHONY : bruteforce.cpp.i
+
+bruteforce.s: bruteforce.cpp.s
+.PHONY : bruteforce.s
+
+# target to generate assembly for a file
+bruteforce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bruteforce.cpp.s
+.PHONY : bruteforce.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... asymptotic_test
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... bisearch.obj
+	@echo ... bisearch.i
+	@echo ... bisearch.s
+	@echo ... bruteforce.obj
+	@echo ... bruteforce.i
+	@echo ... bruteforce.s
 .PHONY : help
 
 

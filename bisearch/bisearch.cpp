@@ -1,0 +1,70 @@
+//
+// Created by stg05 on 17.02.2024.
+//
+
+#include <iostream>
+#include <chrono>
+#include <random>
+#include <fstream>
+#include <algorithm>
+
+using namespace std;
+
+int *bisearch(int array[], size_t count, int target) {
+    size_t start = 0, end = count - 1;
+    while (true) {
+        if (start == end) {
+            if (array[start] != target) {
+                return nullptr;
+            } else {
+                return array + sizeof(int) * start;
+            }
+        } else {
+            size_t current = (start + end) / 2u;
+            if (array[current] > target) {
+                end = current - 1;
+            } else if (array[current] < target) {
+                start = current + 1;
+            } else {
+                return array + sizeof(int) * current;
+            }
+        }
+
+    }
+}
+
+void fill_array(int target[], size_t count) {
+    unsigned seed = 30239;
+    default_random_engine rng(seed);
+    uniform_int_distribution<int> dstr(0, 9);
+    for (unsigned i = 0; i < count; i++) {
+        target[i] = dstr(rng);
+    }
+}
+
+string runTest(size_t count) {
+    int workingArray[count];
+    fill_array(workingArray, count);
+    sort(workingArray, workingArray + sizeof(int) * count);
+    auto begin = chrono::steady_clock::now();
+    for (int i = 0; i < 1000; i++) {
+        bisearch(workingArray, count, 10);
+    }
+
+    auto end = std::chrono::steady_clock::now();
+    auto span = chrono::duration_cast<chrono::milliseconds>(end - begin).count();
+    return ";" + to_string(span);
+}
+
+int main() {
+    std::ofstream out("bisearch.csv");
+    out << "size;time1;time2;time3;time4;time5\n";
+    for (unsigned size = 1000; size <= 150000; size += 1000) {
+        out << to_string(size);
+        for (int j = 0; j < 5; j++) {     //in order to determine median value
+            out << runTest(size);
+        }
+        out << endl;
+    }
+    return 0;
+}
