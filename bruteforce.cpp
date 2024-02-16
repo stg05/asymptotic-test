@@ -27,16 +27,24 @@ string runTest(size_t count) {
     int workingArray[count];
     fill_array(workingArray, count);
     auto begin = chrono::steady_clock::now();
-    bruteforce(workingArray, count, 10);
+    for (int i = 0; i < 1000; i++) {
+        bruteforce(workingArray, count, 10);
+    }
+
     auto end = std::chrono::steady_clock::now();
     auto span = chrono::duration_cast<chrono::milliseconds>(end - begin).count();
-    return to_string(count) + ";" + to_string(span) + "\n";
+    return ";" + to_string(span) ;
 }
 
 int main() {
-    std::ofstream out("testdata.csv");
-    for(unsigned size = 1; size<10000; size++){
-        out << runTest(size);
+    std::ofstream out("bruteforce.csv");
+    out << "size;time1;time2;time3;time4;time5\n";
+    for (unsigned size = 1000; size <= 150000; size+=1000) {
+        out << to_string(size);
+        for(int j=0; j<5; j++){     //in order to determine median value
+            out << runTest(size);
+        }
+        out << endl;
     }
     return 0;
 }
