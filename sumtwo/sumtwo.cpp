@@ -10,29 +10,23 @@
 
 using namespace std;
 
-int *bisearch(int array[], size_t count, int target) {
-    size_t start = 0, end = count - 1;
+struct response{
+    int* var1;
+    int* var2;
+};
 
-    while (true) {
-        size_t current = (start + end) / 2u;
-        if (start == end) {
-            if (array[start] != target) {
-                return nullptr;
-            } else {
-                return array + sizeof(int) * start;
-            }
-        } else {
-            if (array[current] > target) {
-                end = current - 1;
-            } else if (array[current] < target) {
-                start = current + 1;
-            } else {
-                return array + sizeof(int) * current;
+response searchsum(int array[], size_t count, int target) {
+    response rsp{nullptr, nullptr};
+    for(size_t i = 0; i<count; i++){
+        for(size_t j = 0; j < count; j++){
+            if(array[i]+array[j] == target){
+                rsp.var1 = array + sizeof(int) * i;
+                rsp.var2 = array + sizeof(int) * j;
+                return rsp;
             }
         }
-
-
     }
+    return rsp;
 }
 
 void fill_array(int target[], size_t count) {
@@ -47,10 +41,9 @@ void fill_array(int target[], size_t count) {
 string runTest(size_t count) {
     int workingArray[count];
     fill_array(workingArray, count);
-    sort(workingArray, workingArray + count);
     auto begin = chrono::steady_clock::now();
-    for (int i = 0; i < 2e6; i++) {
-        bisearch(workingArray, count, 100);
+    for (int i = 0; i < 1; i++) {
+        searchsum(workingArray, count, 200);
     }
 
     auto end = std::chrono::steady_clock::now();
@@ -59,9 +52,9 @@ string runTest(size_t count) {
 }
 
 int main() {
-    std::ofstream out("bisearch.csv");
+    std::ofstream out("sumtwo.csv");
     out << "size;time1;time2;time3;time4;time5\n";
-    for (unsigned size = 1; size <= 520000; size = size * 6 / 5 + 1) {
+    for (unsigned size = 1000; size <= 10000; size=size*50/49) {
         out << to_string(size);
         for (int j = 0; j < 5; j++) {     //in order to determine median value
             out << runTest(size);

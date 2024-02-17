@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
+  "CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj"
   "asymptotic_test.exe"
   "asymptotic_test.exe.manifest"
   "asymptotic_test.pdb"

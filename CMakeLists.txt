@@ -3,4 +3,4 @@ project(asymptotic_test)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(asymptotic_test  )
+add_executable(asymptotic_test sumtwo/sumtwo.cpp )

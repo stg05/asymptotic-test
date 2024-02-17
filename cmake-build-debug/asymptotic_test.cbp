@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/bisearch/bisearch.cpp">
+		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/sumtwo/sumtwo.cpp">
 			<Option target="asymptotic_test"/>
 		</Unit>
 		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/CMakeLists.txt">

@@ -128,29 +128,29 @@ asymptotic_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/build
 .PHONY : asymptotic_test/fast
 
-bisearch/bisearch.obj: bisearch/bisearch.cpp.obj
-.PHONY : bisearch/bisearch.obj
+sumtwo/sumtwo.obj: sumtwo/sumtwo.cpp.obj
+.PHONY : sumtwo/sumtwo.obj
 
 # target to build an object file
-bisearch/bisearch.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj
-.PHONY : bisearch/bisearch.cpp.obj
+sumtwo/sumtwo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj
+.PHONY : sumtwo/sumtwo.cpp.obj
 
-bisearch/bisearch.i: bisearch/bisearch.cpp.i
-.PHONY : bisearch/bisearch.i
+sumtwo/sumtwo.i: sumtwo/sumtwo.cpp.i
+.PHONY : sumtwo/sumtwo.i
 
 # target to preprocess a source file
-bisearch/bisearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i
-.PHONY : bisearch/bisearch.cpp.i
+sumtwo/sumtwo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.i
+.PHONY : sumtwo/sumtwo.cpp.i
 
-bisearch/bisearch.s: bisearch/bisearch.cpp.s
-.PHONY : bisearch/bisearch.s
+sumtwo/sumtwo.s: sumtwo/sumtwo.cpp.s
+.PHONY : sumtwo/sumtwo.s
 
 # target to generate assembly for a file
-bisearch/bisearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s
-.PHONY : bisearch/bisearch.cpp.s
+sumtwo/sumtwo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.s
+.PHONY : sumtwo/sumtwo.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... asymptotic_test
-	@echo ... bisearch/bisearch.obj
-	@echo ... bisearch/bisearch.i
-	@echo ... bisearch/bisearch.s
+	@echo ... sumtwo/sumtwo.obj
+	@echo ... sumtwo/sumtwo.i
+	@echo ... sumtwo/sumtwo.s
 .PHONY : help
 
 

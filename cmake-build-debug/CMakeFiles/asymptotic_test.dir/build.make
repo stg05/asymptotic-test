@@ -65,27 +65,27 @@ include CMakeFiles/asymptotic_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/asymptotic_test.dir/flags.make
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: ../bisearch/bisearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp
+CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
+CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj: ../sumtwo/sumtwo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\sumtwo\sumtwo.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo\sumtwo.cpp
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp > CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.i
+CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo\sumtwo.cpp > CMakeFiles\asymptotic_test.dir\sumtwo\sumtwo.cpp.i
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.s
+CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo\sumtwo.cpp -o CMakeFiles\asymptotic_test.dir\sumtwo\sumtwo.cpp.s
 
 # Object files for target asymptotic_test
 asymptotic_test_OBJECTS = \
-"CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
+"CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj"
 
 # External object files for target asymptotic_test
 asymptotic_test_EXTERNAL_OBJECTS =
 
-asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj
+asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/build.make
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/linklibs.rsp
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/objects1.rsp
