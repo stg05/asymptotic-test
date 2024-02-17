@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/stg05/CLionProjects/asymptotic-test/bisearch.cpp
+C:/Users/stg05/CLionProjects/asymptotic-test/bisearch/bisearch.cpp
 iostream
 -
 chrono

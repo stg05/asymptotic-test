@@ -65,47 +65,32 @@ include CMakeFiles/asymptotic_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/asymptotic_test.dir/flags.make
 
-CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
-CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj: ../bruteforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\bruteforce.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\bruteforce.cpp
+CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
+CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: ../bisearch/bisearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp
 
-CMakeFiles/asymptotic_test.dir/bruteforce.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/bruteforce.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\bruteforce.cpp > CMakeFiles\asymptotic_test.dir\bruteforce.cpp.i
+CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp > CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.i
 
-CMakeFiles/asymptotic_test.dir/bruteforce.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/bruteforce.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\bruteforce.cpp -o CMakeFiles\asymptotic_test.dir\bruteforce.cpp.s
-
-CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
-CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj: ../bisearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\bisearch.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\bisearch.cpp
-
-CMakeFiles/asymptotic_test.dir/bisearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/bisearch.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\bisearch.cpp > CMakeFiles\asymptotic_test.dir\bisearch.cpp.i
-
-CMakeFiles/asymptotic_test.dir/bisearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/bisearch.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\bisearch.cpp -o CMakeFiles\asymptotic_test.dir\bisearch.cpp.s
+CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.s
 
 # Object files for target asymptotic_test
 asymptotic_test_OBJECTS = \
-"CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj" \
-"CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj"
+"CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
 
 # External object files for target asymptotic_test
 asymptotic_test_EXTERNAL_OBJECTS =
 
-asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/bruteforce.cpp.obj
-asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/bisearch.cpp.obj
+asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/build.make
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/linklibs.rsp
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/objects1.rsp
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable asymptotic_test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable asymptotic_test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\asymptotic_test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
