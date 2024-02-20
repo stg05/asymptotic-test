@@ -128,29 +128,29 @@ asymptotic_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/build
 .PHONY : asymptotic_test/fast
 
-sumtwo/sumtwo.obj: sumtwo/sumtwo.cpp.obj
-.PHONY : sumtwo/sumtwo.obj
+sumtwo-sorted/sumtwo-sorted.obj: sumtwo-sorted/sumtwo-sorted.cpp.obj
+.PHONY : sumtwo-sorted/sumtwo-sorted.obj
 
 # target to build an object file
-sumtwo/sumtwo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.obj
-.PHONY : sumtwo/sumtwo.cpp.obj
+sumtwo-sorted/sumtwo-sorted.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.obj
 
-sumtwo/sumtwo.i: sumtwo/sumtwo.cpp.i
-.PHONY : sumtwo/sumtwo.i
+sumtwo-sorted/sumtwo-sorted.i: sumtwo-sorted/sumtwo-sorted.cpp.i
+.PHONY : sumtwo-sorted/sumtwo-sorted.i
 
 # target to preprocess a source file
-sumtwo/sumtwo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.i
-.PHONY : sumtwo/sumtwo.cpp.i
+sumtwo-sorted/sumtwo-sorted.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.i
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.i
 
-sumtwo/sumtwo.s: sumtwo/sumtwo.cpp.s
-.PHONY : sumtwo/sumtwo.s
+sumtwo-sorted/sumtwo-sorted.s: sumtwo-sorted/sumtwo-sorted.cpp.s
+.PHONY : sumtwo-sorted/sumtwo-sorted.s
 
 # target to generate assembly for a file
-sumtwo/sumtwo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo/sumtwo.cpp.s
-.PHONY : sumtwo/sumtwo.cpp.s
+sumtwo-sorted/sumtwo-sorted.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.s
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... asymptotic_test
-	@echo ... sumtwo/sumtwo.obj
-	@echo ... sumtwo/sumtwo.i
-	@echo ... sumtwo/sumtwo.s
+	@echo ... sumtwo-sorted/sumtwo-sorted.obj
+	@echo ... sumtwo-sorted/sumtwo-sorted.i
+	@echo ... sumtwo-sorted/sumtwo-sorted.s
 .PHONY : help
 
 
