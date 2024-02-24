@@ -7,6 +7,7 @@
 #include <random>
 #include <fstream>
 #include <algorithm>
+#include "../tools.h"
 
 using namespace std;
 
@@ -29,18 +30,9 @@ response searchsum(int array[], size_t count, int target) {
     return rsp;
 }
 
-void fill_array(int target[], size_t count) {
-    unsigned seed = 30239;
-    default_random_engine rng(seed);
-    uniform_int_distribution<int> dstr(0, 99);
-    for (unsigned i = 0; i < count; i++) {
-        target[i] = dstr(rng);
-    }
-}
-
 string runTest(size_t count) {
     int workingArray[count];
-    fill_array(workingArray, count);
+    tools::fill_array(workingArray, count);
     auto begin = chrono::steady_clock::now();
     for (int i = 0; i < 1; i++) {
         searchsum(workingArray, count, 200);
@@ -52,7 +44,7 @@ string runTest(size_t count) {
 }
 
 int main() {
-    std::ofstream out("sumtwo-sorted.csv");
+    std::ofstream out("sumtwo.csv");
     out << "size;time1;time2;time3;time4;time5\n";
     for (unsigned size = 1000; size <= 10000; size=size*50/49) {
         out << to_string(size);

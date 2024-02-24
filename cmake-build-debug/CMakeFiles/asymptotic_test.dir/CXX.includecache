@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/stg05/CLionProjects/asymptotic-test/sumtwo-sorted/sumtwo-sorted.cpp
+C:/Users/stg05/CLionProjects/asymptotic-test/bisearch/bisearch.cpp
 iostream
 -
 chrono
@@ -16,5 +16,23 @@ random
 fstream
 -
 algorithm
+-
+../tools.h
+C:/Users/stg05/CLionProjects/asymptotic-test/tools.h
+
+C:/Users/stg05/CLionProjects/asymptotic-test/tools.cpp
+ctime
+-
+random
+-
+algorithm
+-
+chrono
+-
+tools.h
+C:/Users/stg05/CLionProjects/asymptotic-test/tools.h
+
+C:/Users/stg05/CLionProjects/asymptotic-test/tools.h
+cstddef
 -
 

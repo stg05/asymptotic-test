@@ -37,7 +37,7 @@ response searchsum(int array[], size_t count, int target) {
 }
 
 void fill_array(int target[], size_t count) {
-    unsigned seed = 30239;
+    unsigned seed = time(0);
     default_random_engine rng(seed);
     uniform_int_distribution<int> dstr(0, 99);
     for (unsigned i = 0; i < count; i++) {

@@ -3,4 +3,4 @@ project(asymptotic_test)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(asymptotic_test sumtwo-sorted/sumtwo-sorted.cpp)
+add_executable(asymptotic_test bisearch/bisearch.cpp tools.cpp tools.h)

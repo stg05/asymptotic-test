@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/sumtwo-sorted/sumtwo-sorted.cpp">
+		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/bisearch/bisearch.cpp">
+			<Option target="asymptotic_test"/>
+		</Unit>
+		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/tools.cpp">
+			<Option target="asymptotic_test"/>
+		</Unit>
+		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/tools.h">
 			<Option target="asymptotic_test"/>
 		</Unit>
 		<Unit filename="C:/Users/stg05/CLionProjects/asymptotic-test/CMakeLists.txt">

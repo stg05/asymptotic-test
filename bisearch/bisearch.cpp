@@ -7,6 +7,7 @@
 #include <random>
 #include <fstream>
 #include <algorithm>
+#include "../tools.h"
 
 using namespace std;
 
@@ -35,31 +36,6 @@ int *bisearch(int array[], size_t count, int target) {
     }
 }
 
-void fill_array(int target[], size_t count) {
-    unsigned seed = 30239;
-    default_random_engine rng(seed);
-    uniform_int_distribution<int> dstr(0, 99);
-    for (unsigned i = 0; i < count; i++) {
-        target[i] = dstr(rng);
-    }
-}
-
-string runTest(size_t count) {
-    int *workingArray = new int[count];
-    fill_array(workingArray, count);
-    sort(workingArray, workingArray + count);
-    auto begin = chrono::steady_clock::now();
-    for (int i = 0; i < 5e5; i++) {
-        bisearch(workingArray, count, 100);
-    }
-
-    auto end = std::chrono::steady_clock::now();
-    auto span = chrono::duration_cast<chrono::microseconds>(end - begin).count();
-    delete[] workingArray;
-    workingArray = nullptr;
-    return ";" + to_string(span);
-}
-
 int main() {
     const int sizeData = 100;
     std::ofstream out("bisearch.csv");
@@ -71,7 +47,7 @@ int main() {
     for (unsigned size = 1; size <= 1000000; size = size * 6 / 5 + 1) {
         out << to_string(size);
         for (int j = 0; j < sizeData; j++) {     //in order to determine median value
-            out << runTest(size);
+            out << tools::runTest(bisearch, size);
         }
         out << endl;
         cout << size << endl;
