@@ -65,18 +65,18 @@ include CMakeFiles/asymptotic_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/asymptotic_test.dir/flags.make
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj: ../bisearch/bisearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp
+CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
+CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj: ../sumtwo-sorted/sumtwo-sorted.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stg05\CLionProjects\asymptotic-test\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\asymptotic_test.dir\sumtwo-sorted\sumtwo-sorted.cpp.obj -c C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo-sorted\sumtwo-sorted.cpp
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp > CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.i
+CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo-sorted\sumtwo-sorted.cpp > CMakeFiles\asymptotic_test.dir\sumtwo-sorted\sumtwo-sorted.cpp.i
 
-CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\bisearch\bisearch.cpp -o CMakeFiles\asymptotic_test.dir\bisearch\bisearch.cpp.s
+CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stg05\CLionProjects\asymptotic-test\sumtwo-sorted\sumtwo-sorted.cpp -o CMakeFiles\asymptotic_test.dir\sumtwo-sorted\sumtwo-sorted.cpp.s
 
 CMakeFiles/asymptotic_test.dir/tools.cpp.obj: CMakeFiles/asymptotic_test.dir/flags.make
 CMakeFiles/asymptotic_test.dir/tools.cpp.obj: ../tools.cpp
@@ -93,13 +93,13 @@ CMakeFiles/asymptotic_test.dir/tools.cpp.s: cmake_force
 
 # Object files for target asymptotic_test
 asymptotic_test_OBJECTS = \
-"CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj" \
+"CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj" \
 "CMakeFiles/asymptotic_test.dir/tools.cpp.obj"
 
 # External object files for target asymptotic_test
 asymptotic_test_EXTERNAL_OBJECTS =
 
-asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj
+asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/tools.cpp.obj
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/build.make
 asymptotic_test.exe: CMakeFiles/asymptotic_test.dir/linklibs.rsp

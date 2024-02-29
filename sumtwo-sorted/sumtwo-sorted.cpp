@@ -3,17 +3,10 @@
 //
 
 #include <iostream>
-#include <chrono>
-#include <random>
 #include <fstream>
-#include <algorithm>
+#include "../tools.h"
 
 using namespace std;
-
-struct response {
-    int *var1;
-    int *var2;
-};
 
 response searchsum(int array[], size_t count, int target) {
     response rsp{nullptr, nullptr};
@@ -36,38 +29,21 @@ response searchsum(int array[], size_t count, int target) {
     }
 }
 
-void fill_array(int target[], size_t count) {
-    unsigned seed = time(0);
-    default_random_engine rng(seed);
-    uniform_int_distribution<int> dstr(0, 99);
-    for (unsigned i = 0; i < count; i++) {
-        target[i] = dstr(rng);
-    }
-}
-
-string runTest(size_t count) {
-    int workingArray[count];
-    fill_array(workingArray, count);
-    sort(workingArray, workingArray + count);
-    auto begin = chrono::steady_clock::now();
-    for (int i = 0; i < 3e3; i++) {
-        searchsum(workingArray, count, 200);
-    }
-
-    auto end = std::chrono::steady_clock::now();
-    auto span = chrono::duration_cast<chrono::milliseconds>(end - begin).count();
-    return ";" + to_string(span);
-}
-
 int main() {
+    const int sizeData = 25;
     std::ofstream out("sumtwo-sorted.csv");
-    out << "size;time1;time2;time3;time4;time5\n";
-    for (unsigned size = 1000; size <= 10000; size+=100) {
+    out << "size";
+    for (int i = 0; i < sizeData; i++) {
+        out << ";time" << i + 1;
+    }
+    out << "\n";
+    for (unsigned size = 10'000; size <= 1'000'000; size+=10'000) {
         out << to_string(size);
-        for (int j = 0; j < 5; j++) {     //in order to determine median value
-            out << runTest(size);
+        for (int j = 0; j < sizeData; j++) {     //in order to determine median value
+            out << tools::runTest(searchsum, size, 1, true);
         }
         out << endl;
+        cout<<size<<endl;
     }
     return 0;
 }

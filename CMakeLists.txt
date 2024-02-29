@@ -3,4 +3,6 @@ project(asymptotic_test)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(asymptotic_test bisearch/bisearch.cpp tools.cpp tools.h)
+set(target "sumtwo-sorted")
+
+add_executable(asymptotic_test ${target}/${target}.cpp tools.cpp tools.h)

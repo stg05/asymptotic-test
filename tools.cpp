@@ -18,12 +18,28 @@ void tools::fill_array(int *target, size_t count) {
 
 };
 
-string tools::runTest(int* (*target_f)(int[], size_t, int), size_t count) {
+string tools::runTest(int* (*target_f)(int[], size_t, int), size_t count, unsigned iterations, bool sorted) {
     int *workingArray = new int[count];
     tools::fill_array(workingArray, count);
-    sort(workingArray, workingArray + count);
+    if(sorted) sort(workingArray, workingArray + count);
     auto begin = chrono::steady_clock::now();
-    for (int i = 0; i < 5e5; i++) {
+    for (int i = 0; i < iterations; i++) {
+        target_f(workingArray, count, 100);
+    }
+
+    auto end = std::chrono::steady_clock::now();
+    auto span = chrono::duration_cast<chrono::microseconds>(end - begin).count();
+    delete[] workingArray;
+    workingArray = nullptr;
+    return ";" + to_string(span);
+}
+
+string tools::runTest(response (*target_f)(int[], size_t, int), size_t count, unsigned iterations, bool sorted) {
+    int *workingArray = new int[count];
+    tools::fill_array(workingArray, count);
+    if(sorted) sort(workingArray, workingArray + count);
+    auto begin = chrono::steady_clock::now();
+    for (int i = 0; i < iterations; i++) {
         target_f(workingArray, count, 100);
     }
 

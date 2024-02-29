@@ -3,18 +3,12 @@
 //
 
 #include <iostream>
-#include <chrono>
-#include <random>
 #include <fstream>
-#include <algorithm>
 #include "../tools.h"
 
 using namespace std;
 
-struct response{
-    int* var1;
-    int* var2;
-};
+
 
 response searchsum(int array[], size_t count, int target) {
     response rsp{nullptr, nullptr};
@@ -30,28 +24,21 @@ response searchsum(int array[], size_t count, int target) {
     return rsp;
 }
 
-string runTest(size_t count) {
-    int workingArray[count];
-    tools::fill_array(workingArray, count);
-    auto begin = chrono::steady_clock::now();
-    for (int i = 0; i < 1; i++) {
-        searchsum(workingArray, count, 200);
-    }
-
-    auto end = std::chrono::steady_clock::now();
-    auto span = chrono::duration_cast<chrono::milliseconds>(end - begin).count();
-    return ";" + to_string(span);
-}
-
 int main() {
+    const int sizeData = 10;
     std::ofstream out("sumtwo.csv");
-    out << "size;time1;time2;time3;time4;time5\n";
-    for (unsigned size = 1000; size <= 10000; size=size*50/49) {
+    out << "size";
+    for (int i = 0; i < sizeData; i++) {
+        out << ";time" << i + 1;
+    }
+    out << "\n";
+    for (unsigned size = 1000; size <= 100000; size=size*50/49) {
         out << to_string(size);
-        for (int j = 0; j < 5; j++) {     //in order to determine median value
-            out << runTest(size);
+        for (int j = 0; j < sizeData; j++) {     //in order to determine median value
+            out << tools::runTest(searchsum, size, 1, false);
         }
         out << endl;
+        cout<<size<<endl;
     }
     return 0;
 }

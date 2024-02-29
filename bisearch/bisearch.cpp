@@ -3,8 +3,6 @@
 //
 
 #include <iostream>
-#include <chrono>
-#include <random>
 #include <fstream>
 #include <algorithm>
 #include "../tools.h"
@@ -44,10 +42,10 @@ int main() {
         out << ";time" << i + 1;
     }
     out << "\n";
-    for (unsigned size = 1; size <= 1000000; size = size * 6 / 5 + 1) {
+    for (unsigned size = 1; size <= 1'000'000; size = size * 6 / 5 + 1) {
         out << to_string(size);
         for (int j = 0; j < sizeData; j++) {     //in order to determine median value
-            out << tools::runTest(bisearch, size);
+            out << tools::runTest(bisearch, size, 5e5, true);
         }
         out << endl;
         cout << size << endl;

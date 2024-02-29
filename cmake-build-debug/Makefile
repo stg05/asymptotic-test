@@ -128,29 +128,29 @@ asymptotic_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/build
 .PHONY : asymptotic_test/fast
 
-bisearch/bisearch.obj: bisearch/bisearch.cpp.obj
-.PHONY : bisearch/bisearch.obj
+sumtwo-sorted/sumtwo-sorted.obj: sumtwo-sorted/sumtwo-sorted.cpp.obj
+.PHONY : sumtwo-sorted/sumtwo-sorted.obj
 
 # target to build an object file
-bisearch/bisearch.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.obj
-.PHONY : bisearch/bisearch.cpp.obj
+sumtwo-sorted/sumtwo-sorted.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.obj
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.obj
 
-bisearch/bisearch.i: bisearch/bisearch.cpp.i
-.PHONY : bisearch/bisearch.i
+sumtwo-sorted/sumtwo-sorted.i: sumtwo-sorted/sumtwo-sorted.cpp.i
+.PHONY : sumtwo-sorted/sumtwo-sorted.i
 
 # target to preprocess a source file
-bisearch/bisearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.i
-.PHONY : bisearch/bisearch.cpp.i
+sumtwo-sorted/sumtwo-sorted.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.i
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.i
 
-bisearch/bisearch.s: bisearch/bisearch.cpp.s
-.PHONY : bisearch/bisearch.s
+sumtwo-sorted/sumtwo-sorted.s: sumtwo-sorted/sumtwo-sorted.cpp.s
+.PHONY : sumtwo-sorted/sumtwo-sorted.s
 
 # target to generate assembly for a file
-bisearch/bisearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/bisearch/bisearch.cpp.s
-.PHONY : bisearch/bisearch.cpp.s
+sumtwo-sorted/sumtwo-sorted.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\asymptotic_test.dir\build.make CMakeFiles/asymptotic_test.dir/sumtwo-sorted/sumtwo-sorted.cpp.s
+.PHONY : sumtwo-sorted/sumtwo-sorted.cpp.s
 
 tools.obj: tools.cpp.obj
 .PHONY : tools.obj
@@ -185,9 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... asymptotic_test
-	@echo ... bisearch/bisearch.obj
-	@echo ... bisearch/bisearch.i
-	@echo ... bisearch/bisearch.s
+	@echo ... sumtwo-sorted/sumtwo-sorted.obj
+	@echo ... sumtwo-sorted/sumtwo-sorted.i
+	@echo ... sumtwo-sorted/sumtwo-sorted.s
 	@echo ... tools.obj
 	@echo ... tools.i
 	@echo ... tools.s

@@ -9,10 +9,16 @@
 
 using namespace std;
 
+struct response{
+    int* var1;
+    int* var2;
+};
+
 class tools {
 public:
     static void fill_array(int target[], size_t count);
-    static string runTest(int* (*target_f)(int[], size_t, int), size_t count);
+    static string runTest(int* (*target_f)(int[], size_t, int), size_t count, unsigned iterations, bool sorted);
+    static string runTest(response (*target_f)(int[], size_t, int), size_t count, unsigned iterations, bool sorted);
 };
 
 
